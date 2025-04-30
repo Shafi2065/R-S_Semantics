@@ -1,0 +1,775 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.city.ac.uk/inm713-in3067/2025/Shafi/"
+     xml:base="http://www.city.ac.uk/inm713-in3067/2025/Shafi/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:sm="http://www.city.ac.uk/inm713-in3067/2025/Shafi/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/">
+        <dc:creator>Shafi Miah
+Rohan Patel</dc:creator>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2025/Shafi/hasHealthMetric -->
+
+    <owl:ObjectProperty rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/hasHealthMetric">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/User"/>
+        <rdfs:range rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/FitnessMetrics"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2025/Shafi/hasNutritionPlan -->
+
+    <owl:ObjectProperty rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/hasNutritionPlan">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/User"/>
+        <rdfs:range rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/Nutrition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2025/Shafi/hasWorkout -->
+
+    <owl:ObjectProperty rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/hasWorkout">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/User"/>
+        <rdfs:range rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/Workout"/>
+        <rdfs:label>Performs Workout</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2025/Shafi/monitorsMetric -->
+
+    <owl:ObjectProperty rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/monitorsMetric">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/Trainer"/>
+        <rdfs:range rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/FitnessMetrics"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2025/Shafi/performsExerciseWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/performsExerciseWith">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/User"/>
+        <rdfs:range rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/GymEquipment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2025/Shafi/usesEquipment -->
+
+    <owl:ObjectProperty rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/usesEquipment">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/Workout"/>
+        <rdfs:range rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/GymEquipment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2025/Shafi/V02Max -->
+
+    <owl:DatatypeProperty rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/V02Max">
+        <rdfs:domain rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/FitnessMetrics"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2025/Shafi/bodyFat -->
+
+    <owl:DatatypeProperty rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/bodyFat">
+        <rdfs:domain rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/User"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2025/Shafi/caloriesBurned -->
+
+    <owl:DatatypeProperty rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/caloriesBurned">
+        <rdfs:domain rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/FitnessMetrics"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2025/Shafi/dailyCaloriesIntake -->
+
+    <owl:DatatypeProperty rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/dailyCaloriesIntake">
+        <rdfs:domain rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/Nutrition"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2025/Shafi/distance -->
+
+    <owl:DatatypeProperty rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/distance">
+        <rdfs:domain rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/FitnessMetrics"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2025/Shafi/hasAge -->
+
+    <owl:DatatypeProperty rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/hasAge">
+        <rdfs:domain rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/User"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:label>User Age</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2025/Shafi/hasGender -->
+
+    <owl:DatatypeProperty rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/hasGender">
+        <rdfs:domain rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/User"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2025/Shafi/hasHeight -->
+
+    <owl:DatatypeProperty rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/hasHeight">
+        <rdfs:domain rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/User"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2025/Shafi/hasWeight -->
+
+    <owl:DatatypeProperty rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/hasWeight">
+        <rdfs:domain rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/User"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2025/Shafi/heartRate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/heartRate">
+        <rdfs:domain rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/FitnessMetrics"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2025/Shafi/moodAfterWorkout -->
+
+    <owl:DatatypeProperty rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/moodAfterWorkout">
+        <rdfs:domain rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/Workout"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2025/Shafi/moodBeforeWorkout -->
+
+    <owl:DatatypeProperty rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/moodBeforeWorkout">
+        <rdfs:domain rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/Workout"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2025/Shafi/restingHeartRate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/restingHeartRate">
+        <rdfs:domain rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/FitnessMetrics"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2025/Shafi/sleepHours -->
+
+    <owl:DatatypeProperty rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/sleepHours">
+        <rdfs:domain rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/User"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2025/Shafi/stepsTaken -->
+
+    <owl:DatatypeProperty rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/stepsTaken">
+        <rdfs:domain rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/FitnessMetrics"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2025/Shafi/waterIntake -->
+
+    <owl:DatatypeProperty rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/waterIntake">
+        <rdfs:domain rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/Nutrition"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2025/Shafi/workoutDuration -->
+
+    <owl:DatatypeProperty rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/workoutDuration">
+        <rdfs:domain rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/Workout"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2025/Shafi/workoutIntensity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/workoutIntensity">
+        <rdfs:domain rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/Workout"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2025/Shafi/workoutType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/workoutType">
+        <rdfs:domain rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/Workout"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topDataProperty -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2025/Shafi/Athlete -->
+
+    <owl:Class rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/Athlete">
+        <rdfs:subClassOf rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/User"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/hasWorkout"/>
+                <owl:allValuesFrom rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/Workout"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2025/Shafi/Barbell -->
+
+    <owl:Class rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/Barbell">
+        <rdfs:subClassOf rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/GymEquipment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2025/Shafi/Bench -->
+
+    <owl:Class rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/Bench">
+        <rdfs:subClassOf rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/GymEquipment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2025/Shafi/BodyFatPercentage -->
+
+    <owl:Class rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/BodyFatPercentage">
+        <rdfs:subClassOf rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/Nutrition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2025/Shafi/CaloriesBurned -->
+
+    <owl:Class rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/CaloriesBurned">
+        <rdfs:subClassOf rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/FitnessMetrics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2025/Shafi/Cardio -->
+
+    <owl:Class rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/Cardio">
+        <rdfs:subClassOf rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/Workout"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2025/Shafi/Crossfit -->
+
+    <owl:Class rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/Crossfit">
+        <rdfs:subClassOf rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/Workout"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2025/Shafi/DailyCaloricIntake -->
+
+    <owl:Class rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/DailyCaloricIntake">
+        <rdfs:subClassOf rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/Nutrition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2025/Shafi/DistanceCovered -->
+
+    <owl:Class rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/DistanceCovered">
+        <rdfs:subClassOf rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/FitnessMetrics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2025/Shafi/Doctor -->
+
+    <owl:Class rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/Doctor">
+        <rdfs:subClassOf rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/User"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2025/Shafi/Dumbbell -->
+
+    <owl:Class rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/Dumbbell">
+        <rdfs:subClassOf rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/GymEquipment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2025/Shafi/FitnessMetrics -->
+
+    <owl:Class rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/FitnessMetrics"/>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2025/Shafi/GymEquipment -->
+
+    <owl:Class rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/GymEquipment"/>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2025/Shafi/HIIT -->
+
+    <owl:Class rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/HIIT">
+        <rdfs:subClassOf rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/Workout"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2025/Shafi/HeartRate -->
+
+    <owl:Class rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/HeartRate">
+        <rdfs:subClassOf rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/FitnessMetrics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2025/Shafi/MacronutrientBreakdown -->
+
+    <owl:Class rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/MacronutrientBreakdown">
+        <rdfs:subClassOf rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/Nutrition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2025/Shafi/MedicineBall -->
+
+    <owl:Class rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/MedicineBall">
+        <rdfs:subClassOf rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/GymEquipment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2025/Shafi/MoodAfterWorkout -->
+
+    <owl:Class rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/MoodAfterWorkout">
+        <rdfs:subClassOf rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/FitnessMetrics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2025/Shafi/MoodBeforeWorkout -->
+
+    <owl:Class rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/MoodBeforeWorkout">
+        <rdfs:subClassOf rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/FitnessMetrics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2025/Shafi/Nutrition -->
+
+    <owl:Class rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/Nutrition">
+        <rdfs:comment>Lifestyle information for users</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2025/Shafi/Nutritionist -->
+
+    <owl:Class rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/Nutritionist">
+        <rdfs:subClassOf rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/User"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2025/Shafi/Pilates -->
+
+    <owl:Class rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/Pilates">
+        <rdfs:subClassOf rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/Workout"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2025/Shafi/ResistanceBand -->
+
+    <owl:Class rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/ResistanceBand">
+        <rdfs:subClassOf rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/GymEquipment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2025/Shafi/RestingHeartRate -->
+
+    <owl:Class rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/RestingHeartRate">
+        <rdfs:subClassOf rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/FitnessMetrics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2025/Shafi/SleepQuality -->
+
+    <owl:Class rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/SleepQuality">
+        <rdfs:subClassOf rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/FitnessMetrics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2025/Shafi/StationaryBike -->
+
+    <owl:Class rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/StationaryBike">
+        <rdfs:subClassOf rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/GymEquipment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2025/Shafi/StepsTaken -->
+
+    <owl:Class rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/StepsTaken">
+        <rdfs:subClassOf rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/FitnessMetrics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2025/Shafi/StrengthTraining -->
+
+    <owl:Class rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/StrengthTraining">
+        <rdfs:subClassOf rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/Workout"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2025/Shafi/Trainer -->
+
+    <owl:Class rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/Trainer">
+        <rdfs:subClassOf rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/User"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2025/Shafi/Treadmill -->
+
+    <owl:Class rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/Treadmill">
+        <rdfs:subClassOf rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/GymEquipment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2025/Shafi/User -->
+
+    <owl:Class rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/User">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/hasHealthMetric"/>
+                <owl:someValuesFrom rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/FitnessMetrics"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/hasWorkout"/>
+                <owl:someValuesFrom rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/Workout"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>User</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2025/Shafi/V02Max -->
+
+    <owl:Class rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/V02Max">
+        <rdfs:subClassOf rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/FitnessMetrics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2025/Shafi/Warmup -->
+
+    <owl:Class rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/Warmup">
+        <rdfs:subClassOf rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/Workout"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2025/Shafi/WaterIntake -->
+
+    <owl:Class rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/WaterIntake">
+        <rdfs:subClassOf rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/Nutrition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2025/Shafi/Workout -->
+
+    <owl:Class rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/Workout">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/usesEquipment"/>
+                <owl:allValuesFrom rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/GymEquipment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Workout Session</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2025/Shafi/Yoga -->
+
+    <owl:Class rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/Yoga">
+        <rdfs:subClassOf rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/Workout"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2025/Shafi/YogaMat -->
+
+    <owl:Class rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/YogaMat">
+        <rdfs:subClassOf rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/GymEquipment"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2025/Shafi/HeartRate_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/HeartRate_1">
+        <rdf:type rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/FitnessMetrics"/>
+        <heartRate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">120</heartRate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2025/Shafi/NutritionPlan_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/NutritionPlan_1">
+        <rdf:type rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/Nutrition"/>
+        <waterIntake rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.5</waterIntake>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2025/Shafi/StationaryBike_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/StationaryBike_1">
+        <rdf:type rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/StationaryBike"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2025/Shafi/Treadmill_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/Treadmill_1">
+        <rdf:type rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/Treadmill"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2025/Shafi/User_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/User_1">
+        <rdf:type rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/User"/>
+        <hasHealthMetric rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/HeartRate_1"/>
+        <hasNutritionPlan rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/NutritionPlan_1"/>
+        <hasWorkout rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/Workout_1"/>
+        <rdfs:comment>Instance of a User</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.city.ac.uk/inm713-in3067/2025/Shafi/Workout_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/Workout_1">
+        <rdf:type rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/Workout"/>
+        <usesEquipment rdf:resource="http://www.city.ac.uk/inm713-in3067/2025/Shafi/Treadmill_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/Athlete"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/Doctor"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/Nutritionist"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/Trainer"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/Barbell"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/Bench"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/Dumbbell"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/MedicineBall"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/ResistanceBand"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/StationaryBike"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/Treadmill"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/YogaMat"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/BodyFatPercentage"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/DailyCaloricIntake"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/MacronutrientBreakdown"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/WaterIntake"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/CaloriesBurned"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/DistanceCovered"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/HeartRate"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/MoodAfterWorkout"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/MoodBeforeWorkout"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/RestingHeartRate"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/SleepQuality"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/StepsTaken"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/V02Max"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/Cardio"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/Crossfit"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/HIIT"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/Pilates"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/StrengthTraining"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/Warmup"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/Yoga"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/FitnessMetrics"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/GymEquipment"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/Nutrition"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/User"/>
+            <rdf:Description rdf:about="http://www.city.ac.uk/inm713-in3067/2025/Shafi/Workout"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
