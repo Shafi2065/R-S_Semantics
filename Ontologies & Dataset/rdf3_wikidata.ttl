@@ -1,0 +1,11 @@
+@prefix shafi: <http://www.city.ac.uk/inm713-in3067/2025/Shafi/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+
+shafi:User_1 shafi:livesIn wd:Q84 .
+
+shafi:User_2 shafi:doesActivity wd:Q54259 .
+
+shafi:User_3 shafi:doesActivity wd:Q1152296 .
+
+shafi:Workout_2 shafi:usesEquipment wd:Q7790721 .
+
