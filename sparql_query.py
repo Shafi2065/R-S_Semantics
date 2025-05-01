@@ -56,11 +56,11 @@ PREFIX schema: <https://schema.org/>
 # }
 
 # Query 6: Get all users and their activities using Google Knowledge Graph
-SELECT ?person ?role
-WHERE {
-  ?person a ?role .
-  FILTER(STRSTARTS(STR(?role), "https://schema.org/"))
-}
+# SELECT ?person ?role
+# WHERE {
+#   ?person a ?role .
+#   FILTER(STRSTARTS(STR(?role), "https://schema.org/"))
+# }
 """
 
 
@@ -70,3 +70,4 @@ results = g.query(q)
 # Print results
 for row in results:
     print(f":Person {row.person}, :Role {row.role}")
+    g.serialize(destination="sparql_query_results.csv", format="csv")

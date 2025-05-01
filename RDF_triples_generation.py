@@ -30,14 +30,16 @@ for index, row in df.iterrows():
     g.add((user_uri, shafi.hasWorkout, workout_uri))
     g.add((user_uri, shafi.hasHealthMetric, hr_uri))
     g.add((user_uri, shafi.hasNutritionPlan, nutrition_uri))
-
+   
     # data properties 
     g.add((user_uri, shafi.age, Literal(row['Age'], datatype=XSD.integer)))
     g.add((workout_uri, shafi.caloriesBurned, Literal(row['Calories Burned'], datatype=XSD.float)))
     g.add((hr_uri, shafi.heartRate, Literal(row['Heart Rate (bpm)'], datatype=XSD.integer)))
     g.add((nutrition_uri, shafi.waterIntake, Literal(row['Water Intake (liters)'], datatype=XSD.float)))
     g.add((nutrition_uri, shafi.dailyCaloriesIntake, Literal(row['Daily Calories Intake'], datatype=XSD.float)))
-    g.add((nutrition_uri, shafi.bodyFat, Literal(row['Body Fat (%)'], datatype=XSD.float)))
+    g.add((workout_uri, shafi.moodBeforeWorkout, Literal(row['Mood Before Workout'], datatype=XSD.string)))
+    g.add((workout_uri, shafi.moodAfterWorkout, Literal(row['Mood After Workout'], datatype=XSD.string)))
+    
 
 g.serialize(destination="rdf_generated_data.ttl", format="turtle")
 print("RDF data generated and saved to rdf_generated_data.ttl")
