@@ -6,6 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://www.city.ac.uk/inm713-in3067/2025/Shafi/">
+    <Prefix name="" IRI="http://www.city.ac.uk/inm713-in3067/2025/Shafi/"/>
     <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
@@ -13,6 +14,9 @@
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Prefix name="shafi" IRI="http://www.city.ac.uk/inm713-in3067/2025/Shafi/"/>
+    <Import>file:/C:/Users/rohan/OneDrive/Documents/GitHub/R-S_Semantics/rdf_generated_data.ttl</Import>
+    <Import>http://www.city.ac.uk/inm713-in3067/2025/Shafi/alignment/1.0</Import>
+    <Import>https://opensource.samsung.com/projects/helifit/1.6.4/helifit.owl</Import>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dc:creator"/>
         <Literal>Shafi Miah
@@ -714,7 +718,7 @@ Rohan Patel</Literal>
     <DataPropertyAssertion>
         <DataProperty IRI="waterIntake"/>
         <NamedIndividual IRI="User_1"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2</Literal>
+        <Literal>2L</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="caloriesBurned"/>
@@ -799,7 +803,7 @@ Rohan Patel</Literal>
     <DataPropertyAssertion>
         <DataProperty IRI="waterIntake"/>
         <NamedIndividual IRI="user/2"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1.3</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.9</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="V02Max"/>
@@ -859,7 +863,7 @@ Rohan Patel</Literal>
     <DataPropertyAssertion>
         <DataProperty IRI="waterIntake"/>
         <NamedIndividual IRI="user/3"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2.5</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.9</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="V02Max"/>
@@ -919,7 +923,7 @@ Rohan Patel</Literal>
     <DataPropertyAssertion>
         <DataProperty IRI="waterIntake"/>
         <NamedIndividual IRI="user/4"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1.7</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.9</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="caloriesBurned"/>

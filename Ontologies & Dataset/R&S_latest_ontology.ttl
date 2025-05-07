@@ -9,6 +9,9 @@
 @base <http://www.city.ac.uk/inm713-in3067/2025/Shafi/> .
 
 <http://www.city.ac.uk/inm713-in3067/2025/Shafi/> rdf:type owl:Ontology ;
+                                                   owl:imports <file:/C:/Users/rohan/OneDrive/Documents/GitHub/R-S_Semantics/rdf_generated_data.ttl> ,
+                                                               <http://www.city.ac.uk/inm713-in3067/2025/Shafi/alignment/1.0> ,
+                                                               <https://opensource.samsung.com/projects/helifit/1.6.4/helifit.owl> ;
                                                    dc:creator """Shafi Miah
 Rohan Patel""" .
 
@@ -564,7 +567,7 @@ shafi:User_1 rdf:type owl:NamedIndividual ,
              shafi:moodBeforeWorkout "Nervous" ;
              shafi:restingHeartRate 85 ;
              shafi:sleepHours 6.5 ;
-             shafi:waterIntake 2 ;
+             shafi:waterIntake "2L" ;
              rdfs:comment "Instance of a User" .
 
 
@@ -598,7 +601,7 @@ shafi:Workout_1 rdf:type owl:NamedIndividual ,
                                                         shafi:moodBeforeWorkout "Happy" ;
                                                         shafi:restingHeartRate 73 ;
                                                         shafi:sleepHours "8.6"^^xsd:float ;
-                                                        shafi:waterIntake 1.3 ;
+                                                        shafi:waterIntake "1.9"^^xsd:float ;
                                                         rdfs:label "User_2" .
 
 
@@ -619,7 +622,7 @@ shafi:Workout_1 rdf:type owl:NamedIndividual ,
                                                         shafi:moodBeforeWorkout "Happy" ;
                                                         shafi:restingHeartRate 80 ;
                                                         shafi:sleepHours "9.8"^^xsd:float ;
-                                                        shafi:waterIntake 2.5 ;
+                                                        shafi:waterIntake "1.9"^^xsd:float ;
                                                         rdfs:label "User_3" .
 
 
@@ -640,7 +643,7 @@ shafi:Workout_1 rdf:type owl:NamedIndividual ,
                                                         shafi:moodBeforeWorkout "Neutral" ;
                                                         shafi:restingHeartRate 65 ;
                                                         shafi:sleepHours "5.8"^^xsd:float ;
-                                                        shafi:waterIntake 1.7 ;
+                                                        shafi:waterIntake "1.9"^^xsd:float ;
                                                         rdfs:label "User_4" .
 
 
