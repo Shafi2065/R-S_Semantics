@@ -1,0 +1,52 @@
+@prefix : <http://www.city.ac.uk/inm713-in3067/2025/Shafi/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix fitness: <http://www.city.ac.uk/inm713-in3067/2025/Shafi/> .
+@prefix helifit: <https://opensource.samsung.com/projects/helifit/> .
+
+##########################################
+# Class Alignments
+##########################################
+
+fitness:Heart_rate owl:equivalentClass helifit:HLF168HeartRateMeasurement .
+fitness:Yoga owl:equivalentClass helifit:HLF136Yoga .
+fitness:Water_Intake owl:equivalentClass helifit:HLF344WaterIntakeMeasurement .
+fitness:Calories_Burned owl:equivalentClass helifit:HLF346BurnedCaloriesMeasurement .
+fitness:Body_fat_% owl:equivalentClass helifit:HLF323BodyFatMeasurement .
+fitness:Treadmill owl:equivalentClass helifit:HLF85Treadmill .
+fitness:User owl:equivalentClass helifit:E21Person .
+fitness:Doctor_Physician owl:equivalentClass helifit:E39Actor .
+fitness:Gym_Equipment owl:equivalentClass helifit:E70Thing .
+fitness:Nutrition_Plan owl:equivalentClass helifit:HLF349MealMeasurement .
+fitness:Workout_Session owl:equivalentClass helifit:HLF44PhysicalActivity .
+fitness:Cardio owl:equivalentClass helifit:HLF51CardioAerobics .
+fitness:Pilates owl:equivalentClass helifit:HLF134Pilates .
+
+##########################################
+# Object Property Alignments
+##########################################
+
+fitness:isHealthMetricOf owl:equivalentProperty helifit:P400observedDimension .
+fitness:isNutritionPlanOf owl:equivalentProperty helifit:P70documents .
+fitness:monitorsMetric owl:equivalentProperty helifit:P140assignedAttributeTo .
+fitness:performsExerciseWith owl:equivalentProperty helifit:P14performed .
+fitness:isWorkoutOf owl:equivalentProperty helifit:P14carriedOutBy .
+
+##########################################
+# Data Property Alignments
+##########################################
+
+fitness:Heart_Rate owl:equivalentProperty helifit:EP9effectiveDatetime .
+fitness:Body_fat_% owl:equivalentProperty helifit:P90hasValue .
+fitness:Calories_Intake owl:equivalentProperty helifit:P91hasUnit .
+fitness:Distance owl:equivalentProperty helifit:EP7starts .
+fitness:Age owl:equivalentProperty helifit:HLF200AgeMeasurement .
+fitness:Workout_Duration owl:equivalentProperty helifit:HLF188DurationMeasurement .
+fitness:Workout_Intensity owl:equivalentProperty helifit:HLF1PhysicalActivityIntensityDimension .
+fitness:Calories_Burned owl:equivalentProperty helifit:HLF346BurnedCaloriesMeasurement .
+fitness:Steps_Taken owl:equivalentProperty helifit:HLF176StepDailyTreadMeasurement .
+fitness:VO2Max owl:equivalentProperty helifit:HLF38VO2MaxDimension .
+fitness:Resting_Heart_Rate owl:equivalentProperty helifit:HLF17HeartRateMaxDimension .
+fitness:Sleep_Hours owl:equivalentProperty helifit:HLF10SleepStage .
