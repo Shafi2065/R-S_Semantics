@@ -1,73 +1,40 @@
-from rdflib import Graph, RDF, RDFS
+from rdflib import Graph, Namespace, RDF, URIRef
+import pandas as pd
 
-
-# Create a Graph and parse TTL files
+# RDFLib setup
 g = Graph()
-g.parse(r"C:\Users\Shafi\Documents\GitHub\R-S_Semantics\Ontologies & Dataset\RDF_generated_data.ttl", format="ttl")
-g.parse(r"C:\Users\Shafi\Documents\GitHub\R-S_Semantics\Ontologies & Dataset\rdf3_googlekg.ttl", format="ttl")
-g.parse(r"C:\Users\Shafi\Documents\GitHub\R-S_Semantics\Ontologies & Dataset\rdf3_wikidata.ttl", format="ttl")
+g.parse(r"C:\\Users\\Shafi\\Documents\\GitHub\\R-S_Semantics\\RDF_generated_data.ttl", format="ttl")
 
-for s, p, o in g.triples((None, RDF.type, None)):
-    if str(o).startswith("https://schema.org"):
-        print(s, p, o)
+# Define the namespace
+shafi = Namespace("http://www.city.ac.uk/inm713-in3067/2025/Shafi/")
+g.bind("shafi", shafi)
 
-# SPARQL queries
+# SPARQL Query
 q = """
 PREFIX shafi: <http://www.city.ac.uk/inm713-in3067/2025/Shafi/>
-PREFIX wd: <http://www.wikidata.org/entity/>
-PREFIX schema: <https://schema.org/>
 
-# Query 1: Get all users and their workouts
-# SELECT ?user ?workout
-# WHERE {
-#   ?user a shafi:User ;
-#         shafi:hasWorkout ?workout .
-# }
-
-
-# Query 2: Get all workouts with calories burned greater than 500
-# SELECT ?workout ?calories
-# WHERE {
-#   ?workout a shafi:Workout ;
-#            shafi:caloriesBurned ?calories .
-#   FILTER (?calories > 500)
-# }
-
-# Query 3: Get all users with water intake less than 2.0 liters
-# SELECT ?user ?water
-# WHERE {
-#   ?user a shafi:User ;
-#         shafi:waterIntake ?water .
-#   FILTER (?water < 2.0)
-# }
-
-# Query 4: Get all workouts that use specific equipment
-
-# SELECT ?workout ?equipment
-# WHERE {
-#   ?workout a shafi:Workout ;
-#            shafi:performsExerciseWith ?equipment .
-# }
-
-# Query 5: Get all users and their activities using Wikidata
-# SELECT ?user ?activity
-# WHERE {
-#   ?user shafi:doesActivity ?activity .
-# }
-
-# Query 6: Get all users and their activities using Google Knowledge Graph
-# SELECT ?person ?role
-# WHERE {
-#   ?person a ?role .
-#   FILTER(STRSTARTS(STR(?role), "https://schema.org/"))
-# }
+SELECT ?user ?water
+WHERE {
+    ?user a shafi:User ;
+          shafi:hasNutritionPlan ?plan .
+    ?plan shafi:waterIntake ?water .
+    FILTER(?water < 2.0)
+}
 """
-
 
 # Run the query
 results = g.query(q)
 
-# Print results
-for row in results:
-    print(f":Person {row.person}, :Role {row.role}")
-    g.serialize(destination="sparql_query_results.csv", format="csv")
+# Collect query results into a list
+query_results = [(str(row.user), float(row.water)) for row in results]
+
+# Convert to DataFrame
+df = pd.DataFrame(query_results, columns=["User", "Water Intake"])
+
+# Export as txt file
+output_file = "sparql_query_results.txt"
+with open(output_file, "w") as file:
+    file.write(df.to_string(index=False))
+
+print(f"Results exported to {output_file}")
+
