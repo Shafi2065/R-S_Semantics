@@ -1,6 +1,25 @@
 import pandas as pd
 from rdflib import Graph, Literal, RDF, Namespace, XSD
 
+def generate_uri(entity_type, data):
+    """
+    Generate a URI based on the entity type and data.
+    """
+    if entity_type == "User":
+        return shafi[f"User_{data['User ID']}_Age_{data['Age']}"]
+
+    elif entity_type == "Workout":
+        return shafi[f"Workout_{data['User ID']}_Calories_{data['Calories Burned']}"]
+
+    elif entity_type == "HealthMetric":
+        return shafi[f"HealthMetric_{data['User ID']}_HeartRate_{data['Heart Rate (bpm)']}"]
+
+    elif entity_type == "NutritionPlan":
+        return shafi[f"NutritionPlan_{data['User ID']}_Water_{data['Water Intake (liters)']}"]
+
+    else:
+        raise ValueError(f"Unknown entity type: {entity_type}")
+
 df = pd.read_csv("C:/Users/Shafi/Documents/GitHub/R-S_Semantics/Ontologies & Dataset/RS_Dataset.csv")
 
 g = Graph()
@@ -8,18 +27,11 @@ shafi = Namespace("http://www.city.ac.uk/inm713-in3067/2025/R_S/data/")
 g.bind("RS", shafi)
 
 for index, row in df.iterrows():
-    user_id = f"User_{row['User ID']}"
-    workout_id = f"Workout_{row['User ID']}"
-    hr_id = f"HeartRate_{row['User ID']}"
-    nutrition_id = f"NutritionPlan_{row['User ID']}"
-    dailycal_id = f"DailyCalories_{row['User ID']}"
-
-    user_uri = shafi[user_id]
-    workout_uri = shafi[workout_id]
-    hr_uri = shafi[hr_id]
-    nutrition_uri = shafi[nutrition_id]
-    dailycal_uri = shafi[dailycal_id]
-
+    user_uri = generate_uri("User", row)
+    workout_uri = generate_uri("Workout", row)
+    hr_uri = generate_uri("HealthMetric", row)
+    nutrition_uri = generate_uri("NutritionPlan", row)
+    
     # Define types
     g.add((user_uri, RDF.type, shafi.User))
     g.add((workout_uri, RDF.type, shafi.Workout))
@@ -42,4 +54,7 @@ for index, row in df.iterrows():
     
 
 g.serialize(destination="rdf_generated_data.ttl", format="turtle")
+for s, p, o in g:
+    if "User" in str(s):
+        print(f"URI: {s} | Predicate: {p} | Object: {o}")
 print("RDF data generated and saved to rdf_generated_data.ttl")
