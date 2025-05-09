@@ -83,8 +83,8 @@ for query_name, query in queries.items():
     columns = [str(var) for var in results.vars]
     df = pd.DataFrame(query_results, columns=columns)
 
-    # Export as txt file
-    output_file = f"{query_name}_results.txt"
+    # Export as csv file
+    output_file = f"{query_name}_results.csv"
     df.to_csv(output_file, sep="\t", index=False, header=True)
     print(f"Query: {query_name}")
 
