@@ -85,7 +85,7 @@ for query_name, query in queries.items():
 
     # Export as txt file
     output_file = f"{query_name}_results.txt"
-    with open(output_file, "w") as file:
-        file.write(df.to_string(index=False))
+    df.to_csv(output_file, sep="\t", index=False, header=True)
+    print(f"Query: {query_name}")
 
     print(f"Results exported to {output_file}")
