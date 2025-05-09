@@ -4,8 +4,8 @@ from rdflib import Graph, Literal, RDF, Namespace, XSD
 df = pd.read_csv("C:/Users/Shafi/Documents/GitHub/R-S_Semantics/Ontologies & Dataset/RS_Dataset.csv")
 
 g = Graph()
-shafi = Namespace("http://www.city.ac.uk/inm713-in3067/2025/Shafi/")
-g.bind("shafi", shafi)
+shafi = Namespace("http://www.city.ac.uk/inm713-in3067/2025/R_S/data/")
+g.bind("RS", shafi)
 
 for index, row in df.iterrows():
     user_id = f"User_{row['User ID']}"
