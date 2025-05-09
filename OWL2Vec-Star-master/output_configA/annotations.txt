@@ -1,0 +1,93 @@
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/hasAge preferred_label Age
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/stepsTaken preferred_label Steps Taken
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/workout/4 preferred_label Workout_4
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/user/4 preferred_label User_4
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/workoutDuration preferred_label Workout Duration
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/workout/2 preferred_label Workout_2
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/user/2 preferred_label User_2
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/RestingHeartRate preferred_label Resting Heart Rate
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/hasWeight preferred_label Weight
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/workout/3 preferred_label Workout_3
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/user/3 preferred_label User_3
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/bodyFat preferred_label Body fat %
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/sleepHours preferred_label Sleep Hours
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/MoodAfterWorkout preferred_label Mood after workout
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/DistanceCovered preferred_label Distance covered
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/hasGender preferred_label Gender
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/caloriesBurned preferred_label Calories Burned
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/workoutIntensity preferred_label Workout Intensity
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/moodAfterWorkout preferred_label Mood After Workout
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/dailyCaloriesIntake preferred_label Calories Intake
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/waterIntake preferred_label Water Intake
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/moodBeforeWorkout preferred_label Mood Before Workout
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/hasHeight preferred_label Height
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/isNutritionPlanOf preferred_label isNutritionPlanOf
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/hasNutritionPlan preferred_label Nutrition Plan
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/V02Max preferred_label V02Max
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/CaloriesBurned preferred_label Calories Burned
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/StepsTaken preferred_label Steps taken
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/MoodBeforeWorkout preferred_label Mood before workout
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/heartRate preferred_label Heart Rate
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/workoutType preferred_label Workout Type
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/distance preferred_label Distance
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/SleepQuality preferred_label Sleep quality
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/restingHeartRate preferred_label Resting Heart Rate
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/ResistanceBand preferred_label Resistance band
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/isWorkoutOf preferred_label isWorkoutOf
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/hasWorkout preferred_label Performs Workout
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/Cardio preferred_label Cardio
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/GymEquipment preferred_label Gym Equipment
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/FitnessMetrics preferred_label Health Metrics
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/StationaryBike preferred_label Stationary bike
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/Doctor preferred_label Doctor/Physisican
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/Dumbbell preferred_label Dumbbell
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/NutritionPlan preferred_label Nutrition Plan
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/Warmup preferred_label Warmups
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/Barbell preferred_label Barbell
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/Yoga preferred_label Yoga
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/User preferred_label User
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/Pilates preferred_label Pilates
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/YogaMat preferred_label Yoga mat
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/Bench preferred_label Bench
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/isHealthMetricOf preferred_label isHealthMetricOf
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/hasHealthMetric preferred_label Health Metrics
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/Nutritionist preferred_label Nutritionist/Dietition
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/HeartRate preferred_label Heart rate
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/Crossfit preferred_label Crossfit
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/HIIT preferred_label HIIT
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/MedicineBall preferred_label Medicine ball
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/Treadmill preferred_label Treadmill
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/Athlete preferred_label Athlete
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/Trainer preferred_label Personal trainer
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/StrengthTraining preferred_label Strength training
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/Workout preferred_label Workout Session
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/RestingHeartRate Number of times heart beats per minute in an inactive state.
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/Treadmill Heavy gym equipment used for cardio
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/Cardio Endurance training for the cardiovascular system
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/HeartRate Number of times the heart beats per minute during exercise. Unit of measurement is Beats Per Minute (BPM)
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/Crossfit Fitness program and competitive sport that combines elements of gymnastics, weightlifting, cardio, and calisthenics into high-intensity, functional workouts.
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/Nutritionist Special user that works directly with the Athelete user to create and manage nutrition plan, recommends caloric intakes, macronutrients, water intake, etc.
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/CaloriesBurned Total calories burned during a single exercise session
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/Barbell Strength training equipment
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/MoodAfterWorkout Emotions or Mind state of the user after exercise
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/User A user that exercises and is tracking their fitness metrics or a health expert
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/MedicineBall Heavy ball used for a variety of body workouts and strengthening
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/Warmup Light exercise to prepare the ligaments, bones and muscles for a workout session
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/StepsTaken Amount of foot steps taken during a walk or cardio exercise
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/FitnessMetrics Different statistics used to measure current physical condition
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/StrengthTraining Weight training to increase muscle strength, size, power and enduranace
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/MoodBeforeWorkout Emotions or Mind state of the user before exercise
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/ResistanceBand Flexible equipment for crossfit training
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/User_1 Instance of a User
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/Athlete Main focus group of the ontology, performs exercise and has health metrics tracked daily
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/SleepQuality Duration of REM sleep and number of times, if any, disturbed/woken up during
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/NutritionPlan Lifestyle information for users
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/Bench Strength training equipment
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/YogaMat Equipment used for Pilates training
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/Pilates Repetitive exercises performed on a yoga mat or other equipment to promote strength,, stability and flexibility
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/Dumbbell Strength training equipment
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/Doctor Special user that has a 1 to 1 relationship with Athlete user that monitors health metrics and provides fitness information
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/HIIT High-Intesitiy Interval Training is a workout with short bursts of intese workout with rest periods in between
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/Trainer Special user that monitors the fitness level of Athelete user
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/StationaryBike Heavy gym equipment used for cardio
+http://www.city.ac.uk/inm713-in3067/2025/Shafi/Yoga Hindu spiritual exercise to promote breathing control, meditation and usage of special body postures for health and relaxation
