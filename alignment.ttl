@@ -1,0 +1,56 @@
+@prefix : <http://www.city.ac.uk/inm713-in3067/2025/Shafi/alignment#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix shafi: <http://www.city.ac.uk/inm713-in3067/2025/Shafi/> .
+@prefix helifit: <https://opensource.samsung.com/projects/helifit/> .
+
+<http://www.city.ac.uk/inm713-in3067/2025/Shafi/alignment>
+    a owl:Ontology ;
+    owl:versionIRI <http://www.city.ac.uk/inm713-in3067/2025/Shafi/alignment/1.0> .
+
+##########################################
+# Class Alignments
+##########################################
+
+shafi:Heart_rate owl:equivalentClass helifit:HLF168HeartRateMeasurement .
+shafi:Yoga owl:equivalentClass helifit:HLF136Yoga .
+shafi:Water_Intake owl:equivalentClass helifit:HLF344WaterIntakeMeasurement .
+shafi:Calories_Burned_Class owl:equivalentClass helifit:HLF346BurnedCaloriesMeasurement .
+shafi:Body_fat owl:equivalentClass helifit:HLF323BodyFatMeasurement .
+shafi:Treadmill owl:equivalentClass helifit:HLF85Treadmill .
+shafi:User owl:equivalentClass helifit:E21Person .
+shafi:Doctor_Physician owl:equivalentClass helifit:E39Actor .
+shafi:Gym_Equipment owl:equivalentClass helifit:E70Thing .
+shafi:Nutrition_Plan owl:equivalentClass helifit:HLF349MealMeasurement .
+shafi:Workout_Session owl:equivalentClass helifit:HLF44PhysicalActivity .
+shafi:Cardio owl:equivalentClass helifit:HLF51CardioAerobics .
+shafi:Pilates owl:equivalentClass helifit:HLF134Pilates .
+
+##########################################
+# Object Property Alignments
+##########################################
+
+shafi:isHealthMetricOf owl:equivalentProperty helifit:P400observedDimension .
+shafi:isNutritionPlanOf owl:equivalentProperty helifit:P70documents .
+shafi:monitorsMetric owl:equivalentProperty helifit:P140assignedAttributeTo .
+shafi:performsExerciseWith owl:equivalentProperty helifit:P14performed .
+shafi:isWorkoutOf owl:equivalentProperty helifit:P14carriedOutBy .
+
+##########################################
+# Data Property Alignments
+##########################################
+
+shafi:Heart_Rate owl:equivalentProperty helifit:EP9effectiveDatetime .
+shafi:Body_fat owl:equivalentProperty helifit:P90hasValue .
+shafi:Calories_Intake owl:equivalentProperty helifit:P91hasUnit .
+shafi:Distance owl:equivalentProperty helifit:EP7starts .
+shafi:Age owl:equivalentProperty helifit:HLF200AgeMeasurement .
+shafi:Workout_Duration owl:equivalentProperty helifit:HLF188DurationMeasurement .
+shafi:Workout_Intensity owl:equivalentProperty helifit:HLF1PhysicalActivityIntensityDimension .
+shafi:Calories_Burned owl:equivalentProperty helifit:HLF346BurnedCaloriesMeasurement .
+shafi:Steps_Taken owl:equivalentProperty helifit:HLF176StepDailyTreadMeasurement .
+shafi:VO2Max owl:equivalentProperty helifit:HLF38VO2MaxDimension .
+shafi:Resting_Heart_Rate owl:equivalentProperty helifit:HLF17HeartRateMaxDimension .
+shafi:Sleep_Hours owl:equivalentProperty helifit:HLF10SleepStage .
