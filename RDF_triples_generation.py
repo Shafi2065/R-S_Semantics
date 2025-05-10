@@ -3,7 +3,7 @@ from rdflib import Graph, Literal, RDF, Namespace, XSD
 
 def generate_uri(entity_type, data):
     """
-    Generate a URI based on the entity type and data.
+    Generate a URI based on the entity type and data
     """
     if entity_type == "User":
         return shafi[f"User_{data['User ID']}_Age_{data['Age']}"]
