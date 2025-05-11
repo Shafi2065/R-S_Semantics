@@ -69,14 +69,13 @@ queries = {
     """
 }
 
-# Execute each query and write results to a separate file
+
 for query_name, query in queries.items():
     results = g.query(query)
 
     # Collect query results into a list
     query_results = []
     for row in results:
-        # Handle varying number of columns in each query
         query_results.append([str(value) for value in row])
 
     # Convert to DataFrame
