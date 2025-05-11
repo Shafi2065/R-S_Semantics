@@ -7,7 +7,7 @@ print(f"Total triples in the graph: {len(g)}")
 
 # This will define the namespace
 shafi = Namespace("http://www.city.ac.uk/inm713-in3067/2025/Shafi/")
-g.bind("shafi", shafi)
+g.bind("RS", shafi)
 
 # Query 1: For the users and age
 print("\n- Query 1: Users and Age -")
